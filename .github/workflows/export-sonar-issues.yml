@@ -1,0 +1,31 @@
+name: Exportar issues de SonarCloud
+
+on:
+  push:
+    paths:
+      - ".github/workflows/export-sonar-issues.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  exportar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Consultar API pública de SonarCloud
+        run: |
+          curl -fsSL "https://sonarcloud.io/api/issues/search?componentKeys=Juniorcoderw_is1-2026-Nexo&resolved=false&ps=100" -o sonar-issues.json
+          python -m json.tool sonar-issues.json > sonar-issues.pretty.json
+          mv sonar-issues.pretty.json sonar-issues.json
+
+      - name: Guardar resultado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sonar-issues.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: guarda hallazgos actuales de SonarCloud"
+          git push
