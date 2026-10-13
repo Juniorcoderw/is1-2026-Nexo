@@ -1,0 +1,85 @@
+{
+    "total": 1,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 1
+    },
+    "effortTotal": 5,
+    "debtTotal": 5,
+    "issues": [
+        {
+            "key": "AaE2KOkcvop8L9fs504v",
+            "rule": "javascript:S5689",
+            "severity": "MINOR",
+            "component": "Juniorcoderw_is1-2026-Nexo:src/backend/servidor.js",
+            "project": "Juniorcoderw_is1-2026-Nexo",
+            "line": 8,
+            "hash": "4af77bcf43147b78489dd9c4043bfe01",
+            "textRange": {
+                "startLine": 8,
+                "endLine": 8,
+                "startOffset": 6,
+                "endOffset": 9
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This framework implicitly discloses version information by default. Make sure it is safe here.",
+            "effort": "5min",
+            "debt": "5min",
+            "assignee": "Juniorcoderw-U2wgO@github",
+            "tags": [
+                "cwe",
+                "express.js",
+                "former-hotspot"
+            ],
+            "creationDate": "2026-10-13T16:39:48+0000",
+            "updateDate": "2026-10-13T16:46:36+0000",
+            "type": "VULNERABILITY",
+            "organization": "juniorcoderw",
+            "cleanCodeAttribute": "TRUSTWORTHY",
+            "cleanCodeAttributeCategory": "RESPONSIBLE",
+            "impacts": [
+                {
+                    "softwareQuality": "SECURITY",
+                    "severity": "LOW"
+                }
+            ],
+            "issueStatus": "OPEN",
+            "projectName": "is1-2026-Nexo",
+            "internalTags": [],
+            "lastChangeAnalysisUuid": "bfc47085-d04f-42cb-8727-5aed4911b8ab",
+            "lastChangeSource": "ANALYSIS"
+        }
+    ],
+    "components": [
+        {
+            "organization": "juniorcoderw",
+            "key": "Juniorcoderw_is1-2026-Nexo",
+            "uuid": "AaE2KIkWqE4MkiNyzMQa",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "is1-2026-Nexo",
+            "longName": "is1-2026-Nexo"
+        },
+        {
+            "organization": "juniorcoderw",
+            "key": "Juniorcoderw_is1-2026-Nexo:src/backend/servidor.js",
+            "uuid": "AaE2KOHPvop8L9fs504s",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "servidor.js",
+            "longName": "src/backend/servidor.js",
+            "path": "src/backend/servidor.js"
+        }
+    ],
+    "organizations": [
+        {
+            "key": "juniorcoderw",
+            "name": "Juniorcoderw"
+        }
+    ],
+    "facets": []
+}
