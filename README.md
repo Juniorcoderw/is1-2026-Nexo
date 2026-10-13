@@ -1,2 +1,5 @@
-# is1-2026-Nexo
-Repositorio operativo del equipo Nexo para Ingeniería de Software I (2026-II): SAD heredado, contrato OpenAPI, documentación del proceso y código del producto.
+# HELA — Equipo Nexo
+
+Instantánea técnica para análisis estático de la rama `develop` del repositorio del Equipo Nexo.
+
+Origen verificado: `Alex-Jeanpier-Chata/is-2026-nexo`, commit `beb7211fc4b4c641574af109e60bea60b5dc91e0`.
